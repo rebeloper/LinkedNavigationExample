@@ -20,4 +20,5 @@ enum TabSelection {
     case home
     case feed
     case posts
+    case settings
 }

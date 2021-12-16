@@ -27,7 +27,7 @@ struct PostsContainer: View {
 extension PostsContainer {
     class Navigation: ObservableObject {
         
-        enum Page: Equatable {
+        enum Page {
             case postsFirst
             case postView(post: Post)
         }

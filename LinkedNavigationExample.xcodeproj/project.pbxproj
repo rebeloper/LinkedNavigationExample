@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9837F85276B3D5000FA672D /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9837F84276B3D5000FA672D /* SettingsContainer.swift */; };
+		C9837F88276B3D8A00FA672D /* SettingsFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9837F87276B3D8A00FA672D /* SettingsFirstView.swift */; };
+		C9837F8A276B3DBE00FA672D /* SettingsSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9837F89276B3DBE00FA672D /* SettingsSecondView.swift */; };
 		C9C73FF627456DAD00FD3A7A /* LinkedNavigationExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73FF527456DAD00FD3A7A /* LinkedNavigationExampleApp.swift */; };
 		C9C73FF827456DAD00FD3A7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73FF727456DAD00FD3A7A /* ContentView.swift */; };
 		C9C73FFA27456DAF00FD3A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C73FF927456DAF00FD3A7A /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9837F84276B3D5000FA672D /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
+		C9837F87276B3D8A00FA672D /* SettingsFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFirstView.swift; sourceTree = "<group>"; };
+		C9837F89276B3DBE00FA672D /* SettingsSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSecondView.swift; sourceTree = "<group>"; };
 		C9C73FF227456DAD00FD3A7A /* LinkedNavigationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedNavigationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C73FF527456DAD00FD3A7A /* LinkedNavigationExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedNavigationExampleApp.swift; sourceTree = "<group>"; };
 		C9C73FF727456DAD00FD3A7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9837F86276B3D7100FA672D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C9837F87276B3D8A00FA672D /* SettingsFirstView.swift */,
+				C9837F89276B3DBE00FA672D /* SettingsSecondView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C9C73FE927456DAD00FD3A7A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,7 @@
 				C9C7400B2745767A00FD3A7A /* Home */,
 				C9C7400A2745767400FD3A7A /* Feed */,
 				C9C740092745766B00FD3A7A /* Posts */,
+				C9837F86276B3D7100FA672D /* Settings */,
 				C9C740082745766400FD3A7A /* Model */,
 				C9C740072745765400FD3A7A /* Main */,
 				C9C73FF927456DAF00FD3A7A /* Assets.xcassets */,
@@ -152,6 +168,7 @@
 				C9C7400D274576AF00FD3A7A /* HomeContainer.swift */,
 				C9C77DAC274581BA007CF185 /* FeedContainer.swift */,
 				C9C77DB6274586D6007CF185 /* PostsContainer.swift */,
+				C9837F84276B3D5000FA672D /* SettingsContainer.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -235,10 +252,13 @@
 				C9C77DB52745867C007CF185 /* PostView.swift in Sources */,
 				C9C77DAB274581A5007CF185 /* FeedSecondView.swift in Sources */,
 				C9C73FF827456DAD00FD3A7A /* ContentView.swift in Sources */,
+				C9837F8A276B3DBE00FA672D /* SettingsSecondView.swift in Sources */,
 				C9C7401427457C1800FD3A7A /* HomeThirdView.swift in Sources */,
 				C9C77DB12745862A007CF185 /* Post.swift in Sources */,
 				C9C7401227457A8E00FD3A7A /* HomeSecondView.swift in Sources */,
+				C9837F85276B3D5000FA672D /* SettingsContainer.swift in Sources */,
 				C9C77DAF274584B9007CF185 /* Tabs.swift in Sources */,
+				C9837F88276B3D8A00FA672D /* SettingsFirstView.swift in Sources */,
 				C9C7400E274576AF00FD3A7A /* HomeContainer.swift in Sources */,
 				C9C77DB7274586D6007CF185 /* PostsContainer.swift in Sources */,
 				C9C74010274577E800FD3A7A /* HomeFirstView.swift in Sources */,

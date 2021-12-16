@@ -42,12 +42,6 @@ struct HomeFourthView: View {
             }
             
             Button {
-                popToHomeSecondView()
-            } label: {
-                Text("Pop To Home Second View")
-            }
-            
-            Button {
                 popToRoot()
             } label: {
                 Text("Pop To Root")
@@ -86,10 +80,6 @@ extension HomeFourthView {
     
     func popToIndex(_ index: Int) {
         $homeContainerNavigation.flow.popTo(index: index)
-    }
-    
-    func popToHomeSecondView() {
-        $homeContainerNavigation.flow.popTo(page: .homeSecond)
     }
     
     func popToRoot() {

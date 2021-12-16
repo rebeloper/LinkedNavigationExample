@@ -9,5 +9,5 @@ import SwiftUI
 
 struct Post: Identifiable, Equatable {
     let id = UUID().uuidString
-    let title: String
+    var title: String
 }

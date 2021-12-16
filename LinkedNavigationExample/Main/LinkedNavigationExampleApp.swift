@@ -16,6 +16,7 @@ struct LinkedNavigationExampleApp: App {
     @StateObject private var homeContainerNavigation = HomeContainer.Navigation()
     @StateObject private var feedContainerNavigation = FeedContainer.Navigation()
     @StateObject private var postsContainerNavigation =  PostsContainer.Navigation()
+    @StateObject private var settingsContainerNavigation =  SettingsContainer.Navigation()
     
     var body: some Scene {
         WindowGroup {
@@ -24,6 +25,7 @@ struct LinkedNavigationExampleApp: App {
                 .environmentObject(homeContainerNavigation)
                 .environmentObject(feedContainerNavigation)
                 .environmentObject(postsContainerNavigation)
+                .environmentObject(settingsContainerNavigation)
 //                .onOpenURL { url in
 //                    deepLink()
 //                }

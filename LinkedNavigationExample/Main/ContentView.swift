@@ -30,6 +30,12 @@ struct ContentView: View {
                     Image(systemName: "doc")
                 }
                 .tag(TabSelection.posts)
+            
+            SettingsContainer()
+                .tabItem {
+                    Image(systemName: "gear")
+                }
+                .tag(TabSelection.settings)
         }
     }
 }

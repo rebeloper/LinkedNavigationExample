@@ -31,7 +31,7 @@ struct HomeContainer: View {
 extension HomeContainer {
     class Navigation: ObservableObject {
         
-        enum Page: Equatable {
+        enum Page {
             case homeFirst
             case homeSecond
             case homeThird(title: String)

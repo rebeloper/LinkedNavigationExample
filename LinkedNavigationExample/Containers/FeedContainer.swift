@@ -27,7 +27,7 @@ struct FeedContainer: View {
 extension FeedContainer {
     class Navigation: ObservableObject {
         
-        enum Page: Equatable {
+        enum Page {
             case feedFirst
             case feedSecond(person: String)
         }
