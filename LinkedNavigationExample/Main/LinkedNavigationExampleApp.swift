@@ -18,6 +18,8 @@ struct LinkedNavigationExampleApp: App {
     @StateObject private var postsContainerNavigation =  PostsContainer.Navigation()
     @StateObject private var settingsContainerNavigation =  SettingsContainer.Navigation()
     
+    @StateObject private var toastManager = ToastManager(config: .init(enableDebug: true))
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -26,6 +28,7 @@ struct LinkedNavigationExampleApp: App {
                 .environmentObject(feedContainerNavigation)
                 .environmentObject(postsContainerNavigation)
                 .environmentObject(settingsContainerNavigation)
+                .usesEnvironmentObject(toastManager)
 //                .onOpenURL { url in
 //                    deepLink()
 //                }

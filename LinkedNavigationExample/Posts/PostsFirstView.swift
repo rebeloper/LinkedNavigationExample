@@ -18,10 +18,17 @@ struct PostsFirstView: View {
     @EnvironmentObject private var postsContainerNavigation: PostsContainer.Navigation
     
     var body: some View {
-        List {
+        VStack {
+//            ScrollView {
+//                ForEach(posts) { post in
+//                    feedCellView(post)
+//                }
+//            }
+            
             ForEach(posts) { post in
                 feedCellView(post)
             }
+            .scrolls(.vertically)
         }
         .navigationTitle("Feed")
     }

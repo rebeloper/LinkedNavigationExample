@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Dot
 
 struct HomeFirstView: View {
     
     @EnvironmentObject private var homeContainerNavigation: HomeContainer.Navigation
+    
+    @EnvironmentObject private var toastManager: ToastManager
     
     var body: some View {
         VStack {
@@ -29,6 +32,12 @@ struct HomeFirstView: View {
                 pop()
             } label: {
                 Text("Pop")
+            }
+            
+            Button {
+                showToast()
+            } label: {
+                Text("Show Toast")
             }
 
         }
@@ -53,4 +62,26 @@ extension HomeFirstView {
     func pop() {
         $homeContainerNavigation.flow.pop()
     }
+    
+    func showToast() {
+        
+        Task {
+            do {
+                try await Toast.presentThrowing("Title", message: "Hello", showsErrorNotice: true, with: toastManager, action: {
+                    await AsyncWait.for(.milliseconds(1600))
+                    throw CustomError.with(description: "err", code: 0)
+                })
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
+    
+//        Toast.present("Working...", message: "Message", with: toastManager) { done in
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                done(.success(true))
+//            }
+//        }
+    }
+    
 }
